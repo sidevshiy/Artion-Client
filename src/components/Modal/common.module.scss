@@ -17,6 +17,12 @@
   align-items: center;
 }
 
+.formGroupDates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
 .formInputCont {
   height: 50px;
   box-sizing: border-box;
@@ -97,4 +103,10 @@
   font-size: 16px;
   letter-spacing: -0.2px;
   color: #121223;
+}
+
+@media only screen and (max-width: 600px) {
+  .formGroupDates {
+    display: block;
+  }
 }
